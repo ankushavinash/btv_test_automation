@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.8 on win32)" generated="20220328 11:28:40.554" rpa="false" schemaversion="2">
+<suite id="s1" name="Feature Create BTV Project" source="C:\Users\anavina\PycharmProjects\btv_test_atomation\Tests\Feature_Create_BTV_Project.robot">
+<test id="s1-t1" name="Scenario: As a BTV user I should be able to create BTV Project">
+<kw name="Launch application" library="Common_Helper" type="SETUP">
+<kw name="Launch browser" library="Common_Helper">
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("excludeSwitches", ["enable-logging"])</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220328 11:28:41.264" level="INFO">Opening browser '' to base url 'about:blank'.</msg>
+<msg timestamp="20220328 11:28:41.264" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220328 11:28:41.315" level="FAIL">ValueError:  is not a supported browser.</msg>
+<status status="FAIL" starttime="20220328 11:28:41.264" endtime="20220328 11:28:41.315"/>
+</kw>
+<status status="FAIL" starttime="20220328 11:28:41.263" endtime="20220328 11:28:41.316"/>
+</kw>
+<kw name="Input url" library="Common_Helper">
+<arg>${url}</arg>
+<status status="NOT RUN" starttime="20220328 11:28:41.316" endtime="20220328 11:28:41.316"/>
+</kw>
+<status status="FAIL" starttime="20220328 11:28:41.263" endtime="20220328 11:28:41.317"/>
+</kw>
+<kw name="Exit browser" library="Common_Helper" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220328 11:28:41.318" endtime="20220328 11:28:41.318"/>
+</kw>
+<status status="PASS" starttime="20220328 11:28:41.317" endtime="20220328 11:28:41.318"/>
+</kw>
+<doc>TC_001
+As a BTV user after I input all required detail in DMP Project and when
+I click on OK it go to Project Page</doc>
+<tag>Regression</tag>
+<status status="FAIL" starttime="20220328 11:28:41.261" endtime="20220328 11:28:41.318">Setup failed:
+ValueError:  is not a supported browser.</status>
+</test>
+<doc>This suite validates testcases releated approval task in different state</doc>
+<status status="FAIL" starttime="20220328 11:28:40.557" endtime="20220328 11:28:41.321"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Regression</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Feature Create BTV Project">Feature Create BTV Project</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
