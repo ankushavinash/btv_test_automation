@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.8 on win32)" generated="20220404 16:31:17.837" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.9.8 on win32)" generated="20220425 09:55:38.713" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="C:\Users\anavina\PycharmProjects\btv_test_atomation\Tests">
-<suite id="s1-s1" name="TC001 Login To BTV Dashboard" source="C:\Users\anavina\PycharmProjects\btv_test_atomation\Tests\TC001_Login_To_BTV_Dashboard.robot">
-<test id="s1-s1-t1" name="Scenario: As a SBM user I should be able to login to BTV Dashboard">
+<suite id="s1-s1" name="Feature 002 Create BTV Projects" source="C:\Users\anavina\PycharmProjects\btv_test_atomation\Tests\Feature_002_Create_BTV_Projects.robot">
+<test id="s1-s1-t1" name="Scenario: As a BTV user I should be able to create BTV Project">
 <kw name="Launch application" library="Common_Helper" type="SETUP">
 <kw name="Launch browser" library="Common_Helper">
 <arg>${browser}</arg>
@@ -11,34 +11,34 @@
 <arg>${browser}</arg>
 <arg>options=add_experimental_option("excludeSwitches", ["enable-logging"])</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220404 16:31:18.384" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220404 16:31:18.383" endtime="20220404 16:31:20.488"/>
+<msg timestamp="20220425 09:55:39.374" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220425 09:55:39.374" endtime="20220425 09:55:41.888"/>
 </kw>
-<status status="PASS" starttime="20220404 16:31:18.383" endtime="20220404 16:31:20.489"/>
+<status status="PASS" starttime="20220425 09:55:39.373" endtime="20220425 09:55:41.889"/>
 </kw>
 <kw name="Input url" library="Common_Helper">
 <arg>${url}</arg>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220404 16:31:20.491" level="INFO">Opening url 'https://smtcat0007prj.rd.corpintra.net/workcenter'</msg>
-<status status="PASS" starttime="20220404 16:31:20.491" endtime="20220404 16:32:42.324"/>
+<msg timestamp="20220425 09:55:41.892" level="INFO">Opening url 'https://smtcat0007prj.rd.corpintra.net/workcenter'</msg>
+<status status="PASS" starttime="20220425 09:55:41.891" endtime="20220425 09:56:09.663"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220404 16:32:42.325" endtime="20220404 16:32:42.457"/>
+<status status="PASS" starttime="20220425 09:56:09.664" endtime="20220425 09:56:09.796"/>
 </kw>
 <kw name="Wait till login button displayed" library="Common_Helper">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${button_sign_in_id}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220404 16:32:42.458" endtime="20220404 16:32:42.495"/>
+<status status="PASS" starttime="20220425 09:56:09.799" endtime="20220425 09:56:11.551"/>
 </kw>
-<status status="PASS" starttime="20220404 16:32:42.457" endtime="20220404 16:32:42.496"/>
+<status status="PASS" starttime="20220425 09:56:09.797" endtime="20220425 09:56:11.551"/>
 </kw>
-<status status="PASS" starttime="20220404 16:31:20.489" endtime="20220404 16:32:42.496"/>
+<status status="PASS" starttime="20220425 09:55:41.890" endtime="20220425 09:56:11.551"/>
 </kw>
-<status status="PASS" starttime="20220404 16:31:18.383" endtime="20220404 16:32:42.496"/>
+<status status="PASS" starttime="20220425 09:55:39.373" endtime="20220425 09:56:11.551"/>
 </kw>
 <kw name="Given I login to application with login id and password" library="Common">
 <arg>btv_automation_user</arg>
@@ -52,305 +52,255 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${input_login_id}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220404 16:32:42.497" endtime="20220404 16:32:42.520"/>
+<status status="PASS" starttime="20220425 09:56:11.556" endtime="20220425 09:56:11.582"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_login_id}</arg>
 <arg>${username}</arg>
 <arg>True</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220404 16:32:42.521" level="INFO">Typing text 'btv_automation_user' into text field 'id:authUID'.</msg>
-<status status="PASS" starttime="20220404 16:32:42.520" endtime="20220404 16:32:42.595"/>
+<msg timestamp="20220425 09:56:11.583" level="INFO">Typing text 'btv_automation_user' into text field 'id:authUID'.</msg>
+<status status="PASS" starttime="20220425 09:56:11.582" endtime="20220425 09:56:11.714"/>
 </kw>
-<status status="PASS" starttime="20220404 16:32:42.497" endtime="20220404 16:32:42.596"/>
+<status status="PASS" starttime="20220425 09:56:11.555" endtime="20220425 09:56:11.714"/>
 </kw>
 <kw name="Enter password" library="Common_Helper">
 <arg>${password}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${input_password_id}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220404 16:32:42.596" endtime="20220404 16:32:42.615"/>
+<status status="PASS" starttime="20220425 09:56:11.715" endtime="20220425 09:56:11.742"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${input_password_id}</arg>
 <arg>${passowrd}</arg>
 <arg>True</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220404 16:32:42.616" level="INFO">Typing password into text field 'id:authPWD'.</msg>
-<msg timestamp="20220404 16:32:42.648" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220404 16:32:42.680" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220404 16:32:42.615" endtime="20220404 16:32:42.680"/>
+<msg timestamp="20220425 09:56:11.743" level="INFO">Typing password into text field 'id:authPWD'.</msg>
+<msg timestamp="20220425 09:56:11.793" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220425 09:56:11.868" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220425 09:56:11.742" endtime="20220425 09:56:11.868"/>
 </kw>
-<status status="PASS" starttime="20220404 16:32:42.596" endtime="20220404 16:32:42.680"/>
+<status status="PASS" starttime="20220425 09:56:11.714" endtime="20220425 09:56:11.868"/>
 </kw>
 <kw name="Click login" library="Common_Helper">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${button_sign_in_id}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220404 16:32:42.681" endtime="20220404 16:32:42.696"/>
+<status status="PASS" starttime="20220425 09:56:11.869" endtime="20220425 09:56:11.900"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${button_sign_in_id}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220404 16:32:42.697" level="INFO">Clicking button 'id:logonButton'.</msg>
-<status status="PASS" starttime="20220404 16:32:42.696" endtime="20220404 16:33:20.068"/>
+<msg timestamp="20220425 09:56:11.901" level="INFO">Clicking button 'id:logonButton'.</msg>
+<status status="PASS" starttime="20220425 09:56:11.901" endtime="20220425 09:56:36.304"/>
 </kw>
-<status status="PASS" starttime="20220404 16:32:42.680" endtime="20220404 16:33:20.069"/>
+<status status="PASS" starttime="20220425 09:56:11.869" endtime="20220425 09:56:36.304"/>
 </kw>
 <kw name="Wait utill dashboard displayed" library="Common_Helper">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${text_dashboard_xpath}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220404 16:33:20.069" endtime="20220404 16:33:33.002"/>
+<status status="PASS" starttime="20220425 09:56:36.305" endtime="20220425 09:56:40.442"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${img_daimler_id}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220404 16:33:33.003" endtime="20220404 16:33:40.606"/>
+<status status="PASS" starttime="20220425 09:56:40.442" endtime="20220425 09:56:42.451"/>
 </kw>
-<status status="PASS" starttime="20220404 16:33:20.069" endtime="20220404 16:33:40.606"/>
+<status status="PASS" starttime="20220425 09:56:36.304" endtime="20220425 09:56:42.451"/>
 </kw>
-<status status="PASS" starttime="20220404 16:32:42.497" endtime="20220404 16:33:40.606"/>
+<status status="PASS" starttime="20220425 09:56:11.554" endtime="20220425 09:56:42.452"/>
 </kw>
-<status status="PASS" starttime="20220404 16:32:42.496" endtime="20220404 16:33:40.606"/>
+<status status="PASS" starttime="20220425 09:56:11.553" endtime="20220425 09:56:42.452"/>
 </kw>
 <kw name="When I select BTV Project" library="LandingPage">
-<doc>Selects the BTV project</doc>
-<kw name="Click on dropdown" library="LandingPage_Helper">
+<doc>Selects the DMP Task project</doc>
+<kw name="Click on new" library="LandingPage_Helper">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${button_dropdown_id}</arg>
+<arg>${button_new_id}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220404 16:33:40.607" endtime="20220404 16:33:40.624"/>
+<status status="PASS" starttime="20220425 09:56:42.455" endtime="20220425 09:56:42.495"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
-<arg>${button_dropdown_id}</arg>
+<arg>${button_new_id}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220404 16:33:40.624" level="INFO">Clicking button 'id:dLabel'.</msg>
-<msg timestamp="20220404 16:33:40.892" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220404 16:33:40.941" level="FAIL">Button with locator 'id:dLabel' not found.</msg>
-<status status="FAIL" starttime="20220404 16:33:40.624" endtime="20220404 16:33:40.941"/>
+<msg timestamp="20220425 09:56:42.496" level="INFO">Clicking button 'id:newRequestNewButton'.</msg>
+<status status="PASS" starttime="20220425 09:56:42.495" endtime="20220425 09:56:43.480"/>
 </kw>
-<status status="FAIL" starttime="20220404 16:33:40.607" endtime="20220404 16:33:40.942"/>
+<status status="PASS" starttime="20220425 09:56:42.455" endtime="20220425 09:56:43.480"/>
 </kw>
-<status status="FAIL" starttime="20220404 16:33:40.607" endtime="20220404 16:33:40.942"/>
+<kw name="Click on browse" library="LandingPage_Helper">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${link_browse_xpath}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220425 09:56:43.481" endtime="20220425 09:56:43.537"/>
 </kw>
-<kw name="Exit browser" library="Common_Helper" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220404 16:33:40.944" endtime="20220404 16:33:43.168"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_browse_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220425 09:56:43.537" level="INFO">Clicking element 'xpath://a[contains(text(),'Browse')]'.</msg>
+<status status="PASS" starttime="20220425 09:56:43.537" endtime="20220425 09:56:43.583"/>
 </kw>
-<status status="PASS" starttime="20220404 16:33:40.943" endtime="20220404 16:33:43.169"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220425 09:56:48.585" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220425 09:56:43.583" endtime="20220425 09:56:48.585"/>
 </kw>
-<doc>TC_001
-As a SBM user after I login I should able to navigate to BTV Dashboard</doc>
-<tag>demo</tag>
-<status status="FAIL" starttime="20220404 16:31:18.382" endtime="20220404 16:33:43.169">Button with locator 'id:dLabel' not found.</status>
+<status status="PASS" starttime="20220425 09:56:43.480" endtime="20220425 09:56:48.586"/>
+</kw>
+<kw name="Select look in" library="LandingPage_Helper">
+<arg>All Projects</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220425 09:56:58.588" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220425 09:56:48.587" endtime="20220425 09:56:58.588"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${select_look_in_id}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220425 09:56:58.589" endtime="20220425 09:56:58.642"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${select_look_in_id}</arg>
+<arg>${look_in}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220425 09:56:58.643" level="INFO">Selecting options from selection list 'id:j_lookInSelect' by label All Projects.</msg>
+<status status="PASS" starttime="20220425 09:56:58.642" endtime="20220425 09:56:58.771"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220425 09:57:03.772" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220425 09:56:58.771" endtime="20220425 09:57:03.772"/>
+</kw>
+<status status="PASS" starttime="20220425 09:56:48.586" endtime="20220425 09:57:03.774"/>
+</kw>
+<kw name="Input project name in search" library="LandingPage_Helper">
+<arg>BTV-Project</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input_search_xpath}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220425 09:57:03.776" endtime="20220425 09:57:03.814"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_search_xpath}</arg>
+<arg>${project_name}</arg>
+<arg>True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220425 09:57:03.815" level="INFO">Typing text 'BTV-Project' into text field 'xpath://*[@id='submit_projects_project_tree_container']/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20220425 09:57:03.814" endtime="20220425 09:57:03.982"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220425 09:57:08.982" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220425 09:57:03.982" endtime="20220425 09:57:08.982"/>
+</kw>
+<status status="PASS" starttime="20220425 09:57:03.775" endtime="20220425 09:57:08.983"/>
+</kw>
+<kw name="Click on BTV project" library="LandingPage_Helper">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${link_btv_project_id}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220425 09:57:08.985" endtime="20220425 09:57:09.052"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_btv_project_id}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220425 09:57:09.053" level="INFO">Clicking element 'id:node-SBM_PROJECT-project_471-link'.</msg>
+<status status="PASS" starttime="20220425 09:57:09.053" endtime="20220425 09:57:09.143"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220425 09:57:19.144" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220425 09:57:09.143" endtime="20220425 09:57:19.145"/>
+</kw>
+<status status="PASS" starttime="20220425 09:57:08.984" endtime="20220425 09:57:19.145"/>
+</kw>
+<kw name="Wait untill submit into page displayed" library="LandingPage_Helper">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${text_submit_into_id}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220425 09:57:19.148" endtime="20220425 09:57:19.205"/>
+</kw>
+<status status="PASS" starttime="20220425 09:57:19.146" endtime="20220425 09:57:19.206"/>
+</kw>
+<status status="PASS" starttime="20220425 09:56:42.454" endtime="20220425 09:57:19.206"/>
+</kw>
+<kw name="And I input title" library="ProjectLandingPage">
+<arg>Test automation Project</arg>
+<doc>Input given text to title field</doc>
+<kw name="Input title" library="ProjectLandingPage_Helper">
+<arg>${title_name}</arg>
+<kw name="Select issuedetails frame" library="Common_Helper">
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>${frame_issue_details_id}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20220425 09:57:19.212" level="INFO">Selecting frame 'id:issuedetails-frame'.</msg>
+<status status="PASS" starttime="20220425 09:57:19.211" endtime="20220425 09:57:25.072"/>
+</kw>
+<status status="PASS" starttime="20220425 09:57:19.211" endtime="20220425 09:57:25.072"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_title_id}</arg>
+<arg>${title_name}</arg>
+<arg>True</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220425 09:57:25.073" level="INFO">Typing text 'Test automation Project' into text field 'id:F11325'.</msg>
+<msg timestamp="20220425 09:57:25.363" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220425 09:57:25.377" level="FAIL">Element with locator 'id:F11325' not found.</msg>
+<status status="FAIL" starttime="20220425 09:57:25.073" endtime="20220425 09:57:25.377"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="NOT RUN" starttime="20220425 09:57:25.379" endtime="20220425 09:57:25.379"/>
+</kw>
+<status status="FAIL" starttime="20220425 09:57:19.210" endtime="20220425 09:57:25.381"/>
+</kw>
+<status status="FAIL" starttime="20220425 09:57:19.210" endtime="20220425 09:57:25.383"/>
+</kw>
+<kw name="And I select control unit" library="ProjectLandingPage">
+<arg>SBM Test Control Unit</arg>
+<doc>Select given value from control unit field</doc>
+<status status="NOT RUN" starttime="20220425 09:57:25.386" endtime="20220425 09:57:25.386"/>
+</kw>
+<kw name="And I click on ok" library="ProjectLandingPage">
+<doc>Click on ok button</doc>
+<status status="NOT RUN" starttime="20220425 09:57:25.387" endtime="20220425 09:57:25.387"/>
+</kw>
+<doc>TC_002: As a BTV user I should be able to create BTV Project</doc>
+<tag>tttt</tag>
+<status status="FAIL" starttime="20220425 09:55:39.372" endtime="20220425 09:57:25.388">Element with locator 'id:F11325' not found.</status>
 </test>
-<doc>This suite validates testcases releated approval task in different state</doc>
-<status status="FAIL" starttime="20220404 16:31:17.874" endtime="20220404 16:33:43.202"/>
+<doc>This suite validates testcases releated to creation of DMP task</doc>
+<status status="FAIL" starttime="20220425 09:55:38.753" endtime="20220425 09:57:25.391"/>
 </suite>
-<suite id="s1-s2" name="TC002 Create BTV Project" source="C:\Users\anavina\PycharmProjects\btv_test_atomation\Tests\TC002_Create_BTV_Project.robot">
-<test id="s1-s2-t1" name="Scenario: As a SBM user I should be able to login to BTV Dashboard">
-<kw name="Launch application" library="Common_Helper" type="SETUP">
-<kw name="Launch browser" library="Common_Helper">
-<arg>${browser}</arg>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>about:blank</arg>
-<arg>${browser}</arg>
-<arg>options=add_experimental_option("excludeSwitches", ["enable-logging"])</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220404 16:33:43.243" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220404 16:33:43.243" endtime="20220404 16:33:44.944"/>
-</kw>
-<status status="PASS" starttime="20220404 16:33:43.242" endtime="20220404 16:33:44.945"/>
-</kw>
-<kw name="Input url" library="Common_Helper">
-<arg>${url}</arg>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>${url}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220404 16:33:44.946" level="INFO">Opening url 'https://smtcat0007prj.rd.corpintra.net/workcenter'</msg>
-<msg timestamp="20220404 16:33:53.426" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
-  (Session info: chrome=99.0.4844.84)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00967AC3+2587331]
-	Ordinal0 [0x008FADD1+2141649]
-	Ordinal0 [0x007F3A80+1063552]
-	Ordinal0 [0x007E8222+1016354]
-	Ordinal0 [0x007E8F85+1019781]
-	Ordinal0 [0x007EA292+1024658]
-	Ordinal0 [0x007E3F79+999289]
-	Ordinal0 [0x007F4EF0+1068784]
-	Ordinal0 [0x008481D2+1409490]
-	Ordinal0 [0x008384A6+1344678]
-	Ordinal0 [0x008153F6+1201142]
-	Ordinal0 [0x008162E6+1204966]
-	GetHandleVerifier [0x00B0DF22+1680738]
-	GetHandleVerifier [0x00BC0DBC+2413564]
-	GetHandleVerifier [0x009FD151+563089]
-	GetHandleVerifier [0x009FBF13+558419]
-	Ordinal0 [0x0090081E+2164766]
-	Ordinal0 [0x00905508+2184456]
-	Ordinal0 [0x00905650+2184784]
-	Ordinal0 [0x0090F5BC+2225596]
-	BaseThreadInitThunk [0x753D6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77617C24+228]
-	RtlGetAppContainerNamedObjectPath [0x77617BF4+180]
-</msg>
-<msg timestamp="20220404 16:33:53.467" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=99.0.4844.84)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00967AC3+2587331]
-	Ordinal0 [0x008FADD1+2141649]
-	Ordinal0 [0x007F3BB8+1063864]
-	Ordinal0 [0x007E65A0+1009056]
-	Ordinal0 [0x007E6173+1007987]
-	Ordinal0 [0x007E5780+1005440]
-	Ordinal0 [0x007E48B7+1001655]
-	Ordinal0 [0x007E4C87+1002631]
-	Ordinal0 [0x007F0361+1049441]
-	Ordinal0 [0x007E5F2D+1007405]
-	Ordinal0 [0x007E6B9E+1010590]
-	Ordinal0 [0x007E618E+1008014]
-	Ordinal0 [0x007E5780+1005440]
-	Ordinal0 [0x007E48B7+1001655]
-	Ordinal0 [0x007E4B76+1002358]
-	Ordinal0 [0x007F52AA+1069738]
-	Ordinal0 [0x00848FBD+1413053]
-	Ordinal0 [0x0083868C+1345164]
-	Ordinal0 [0x00848A0A+1411594]
-	Ordinal0 [0x008384A6+1344678]
-	Ordinal0 [0x008153F6+1201142]
-	Ordinal0 [0x008162E6+1204966]
-	GetHandleVerifier [0x00B0DF22+1680738]
-	GetHandleVerifier [0x00BC0DBC+2413564]
-	GetHandleVerifier [0x009FD151+563089]
-	GetHandleVerifier [0x009FBF13+558419]
-	Ordinal0 [0x0090081E+2164766]
-	Ordinal0 [0x00905508+2184456]
-	Ordinal0 [0x00905650+2184784]
-	Ordinal0 [0x0090F5BC+2225596]
-	BaseThreadInitThunk [0x753D6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77617C24+228]
-	RtlGetAppContainerNamedObjectPath [0x77617BF4+180]
-</msg>
-<status status="FAIL" starttime="20220404 16:33:44.946" endtime="20220404 16:33:53.467"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" starttime="20220404 16:33:53.468" endtime="20220404 16:33:53.468"/>
-</kw>
-<kw name="Wait till login button displayed" library="Common_Helper">
-<status status="NOT RUN" starttime="20220404 16:33:53.468" endtime="20220404 16:33:53.468"/>
-</kw>
-<status status="FAIL" starttime="20220404 16:33:44.945" endtime="20220404 16:33:53.468"/>
-</kw>
-<status status="FAIL" starttime="20220404 16:33:43.242" endtime="20220404 16:33:53.469"/>
-</kw>
-<kw name="Exit browser" library="Common_Helper" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220404 16:33:53.470" endtime="20220404 16:33:55.522"/>
-</kw>
-<status status="PASS" starttime="20220404 16:33:53.469" endtime="20220404 16:33:55.523"/>
-</kw>
-<doc>TC_001
-As a BTV user after I input all required detail in DMP Project and when
-I click on OK it go to Project Page</doc>
-<tag>demo</tag>
-<status status="FAIL" starttime="20220404 16:33:43.241" endtime="20220404 16:33:55.524">Setup failed:
-WebDriverException: Message: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=99.0.4844.84)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00967AC3+2587331]
-	Ordinal0 [0x008FADD1+2141649]
-	Ordinal0 [0x007F3BB8+1063864]
-	Ordinal0 [0x007E65A0+1009056]
-	Ordinal0 [0x007E6173+1007987]
-	Ordinal0 [0x007E5780+1005440]
-	Ordinal0 [0x007E48B7+1001655]
-	Ordinal0 [0x007E4C87+1002631]
-	Ordinal0 [0x007F0361+1049441]
-	Ordinal0 [0x007E5F2D+1007405]
-	Ordinal0 [0x007E6B9E+1010590]
-	Ordinal0 [0x007E618E+1008014]
-	Ordinal0 [0x007E5780+1005440]
-	Ordinal0 [0x007E48B7+1001655]
-	Ordinal0 [0x007E4B76+1002358]
-	Ordinal0 [0x007F52AA+1069738]
-	Ordinal0 [0x00848FBD+1413053]
-	Ordinal0 [0x0083868C+1345164]
-	Ordinal0 [0x00848A0A+1411594]
-	Ordinal0 [0x008384A6+1344678]
-	Ordinal0 [0x008153F6+1201142]
-	Ordinal0 [0x008162E6+1204966]
-	GetHandleVerifier [0x00B0DF22+1680738]
-	GetHandleVerifier [0x00BC0DBC+2413564]
-	GetHandleVerifier [0x009FD151+563089]
-	GetHandleVerifier [0x009FBF13+558419]
-	Ordinal0 [0x0090081E+2164766]
-	Ordinal0 [0x00905508+2184456]
-	Ordinal0 [0x00905650+2184784]
-	Ordinal0 [0x0090F5BC+2225596]
-	BaseThreadInitThunk [0x753D6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77617C24+228]
-	RtlGetAppContainerNamedObjectPath [0x77617BF4+180]
-</status>
-</test>
-<doc>This suite validates testcases releated approval task in different state</doc>
-<status status="FAIL" starttime="20220404 16:33:43.210" endtime="20220404 16:33:55.529"/>
-</suite>
-<status status="FAIL" starttime="20220404 16:31:17.840" endtime="20220404 16:33:55.534"/>
+<status status="FAIL" starttime="20220425 09:55:38.715" endtime="20220425 09:57:25.397"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="2" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="2" skip="0">demo</stat>
+<stat pass="0" fail="1" skip="0">tttt</stat>
 </tag>
 <suite>
-<stat pass="0" fail="2" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="TC001 Login To BTV Dashboard">Tests.TC001 Login To BTV Dashboard</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s2" name="TC002 Create BTV Project">Tests.TC002 Create BTV Project</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Feature 002 Create BTV Projects">Tests.Feature 002 Create BTV Projects</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220404 16:33:53.426" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: chrome not reachable
-  (Session info: chrome=99.0.4844.84)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00967AC3+2587331]
-	Ordinal0 [0x008FADD1+2141649]
-	Ordinal0 [0x007F3A80+1063552]
-	Ordinal0 [0x007E8222+1016354]
-	Ordinal0 [0x007E8F85+1019781]
-	Ordinal0 [0x007EA292+1024658]
-	Ordinal0 [0x007E3F79+999289]
-	Ordinal0 [0x007F4EF0+1068784]
-	Ordinal0 [0x008481D2+1409490]
-	Ordinal0 [0x008384A6+1344678]
-	Ordinal0 [0x008153F6+1201142]
-	Ordinal0 [0x008162E6+1204966]
-	GetHandleVerifier [0x00B0DF22+1680738]
-	GetHandleVerifier [0x00BC0DBC+2413564]
-	GetHandleVerifier [0x009FD151+563089]
-	GetHandleVerifier [0x009FBF13+558419]
-	Ordinal0 [0x0090081E+2164766]
-	Ordinal0 [0x00905508+2184456]
-	Ordinal0 [0x00905650+2184784]
-	Ordinal0 [0x0090F5BC+2225596]
-	BaseThreadInitThunk [0x753D6359+25]
-	RtlGetAppContainerNamedObjectPath [0x77617C24+228]
-	RtlGetAppContainerNamedObjectPath [0x77617BF4+180]
-</msg>
 </errors>
 </robot>

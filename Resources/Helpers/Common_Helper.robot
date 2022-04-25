@@ -54,7 +54,7 @@ Wait utill dashboard displayed
     wait until element is visible    ${img_daimler_id}    timeout=30
 
 Select issuedetails frame
-    wait until element is visible    ${frame_issue_details_id}
+    #wait until element is visible    ${frame_issue_details_id}
     select frame    ${frame_issue_details_id}
 
 
